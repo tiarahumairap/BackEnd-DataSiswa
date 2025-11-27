@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS db_siswa;
+USE db_siswa;
+
+CREATE TABLE IF NOT EXISTS siswa (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(150),
+  email VARCHAR(100),
+  alamat VARCHAR(100)
+);
