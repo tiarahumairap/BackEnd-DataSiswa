@@ -9,7 +9,7 @@ const siswaRoutes = require('./routes/siswaRoutes');
 app.use(express.json()); // supaya bisa baca body JSON
 
 // mount routes
-app.use('/api/siswa', siswaRoutes);
+app.use('/siswa', siswaRoutes);
 
 // basic error handler
 app.use((err, req, res, next) => {
@@ -19,6 +19,6 @@ app.use((err, req, res, next) => {
 
 // start server
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, '0.0.0.0', () => {
-    console.log(`Server berjalan di http://0.0.0.0:${PORT}`);
+app.listen(PORT, '127.0.0.1', () => {
+    console.log(`Server berjalan di http://127.0.0.1:${PORT}`);
 });
